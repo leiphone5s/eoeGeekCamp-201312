@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="线性布局实现注册窗口"
+        android:tag="linear_layout"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相对布局实现注册窗口"
+        android:tag="relative_layout"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="表格布局实现注册窗口"
+        android:tag="table_layout"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网格布局实现注册窗口"
+        android:tag="grid_layout"
+        android:onClick="onClick"/>
+</LinearLayout>

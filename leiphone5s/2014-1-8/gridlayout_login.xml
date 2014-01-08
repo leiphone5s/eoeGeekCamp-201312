@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="用户名" />
+   
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="字符必须在2~10个之间" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="密 码" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:password="true" 
+        android:hint="字符必须在2-10个之间"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="不"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/login32x32"
+        android:scaleType="centerInside"
+        android:text="登陆" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="不"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:drawableLeft="@drawable/login_exit32x32"
+        android:scaleType="fitXY"
+        android:text="退出" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="不"
+        android:visibility="invisible" />
+
+</LinearLayout>
