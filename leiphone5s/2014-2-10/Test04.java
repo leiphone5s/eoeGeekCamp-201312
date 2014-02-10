@@ -1,0 +1,64 @@
+package se2.day05;
+
+import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class Test04 {
+	public static void main(String[] args) {
+		ExecutorService pools = Executors.newCachedThreadPool();
+		pools.execute(new TalkTask());
+		pools.execute(new DownloadTask());
+		pools.execute(new ScanVirusTask());
+		new Scanner(System.in).next();
+		pools.shutdownNow();
+	}
+
+	static class TalkTask implements Runnable {
+		@Override
+		public void run() {
+			while (true) {
+				System.out.println("¡ƒÃÏ...");
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("¡ƒÃÏ±ª÷’÷π£°£°£°");
+					break;
+				}
+			}
+		}
+	}
+
+	static class DownloadTask implements Runnable {
+		@Override
+		public void run() {
+			while (true) {
+				System.out.println("÷¥––œ¬‘ÿ»ŒŒÒ...");
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("œ¬‘ÿ±ª÷’÷π£°£°£°");
+					break;
+				}
+
+			}
+		}
+	}
+
+	static class ScanVirusTask implements Runnable {
+
+		@Override
+		public void run() {
+			while (true) {
+				System.out.println("…®√Ë≤°∂æ...");
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("…®√Ë≤°∂æ±ª÷’÷π!!!");
+					break;
+				}
+			}
+		}
+
+	}
+}
